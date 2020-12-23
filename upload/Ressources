@@ -1,0 +1,4 @@
+dans la section upload image on peut uploadé un fichier en faisant croire que c'est une image en changeant son type j ai choisie de la faire en utilisant curl.
+on peut ainsi uploadé un programme malveillant.
+
+cependant a garder dans l'esprit que cela est la partie naive de l exploitation de cette faille, on peut mettre du code malveillant directement dans une image en le rajouteant dans le header ou en mettant le code dans les dernier byte.

@@ -1,0 +1,4 @@
+dans cette partie il s agit d exploité une faille xss en utilisant l outils de commentaires
+la quand on ecrit script dans le titre ou dans le commentaire on obtient le flag.
+il existe plein de moyen de contourner les protection anti xss comme l urlencode par example
+

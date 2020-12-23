@@ -1,0 +1,7 @@
+dans la page recover 
+http://<ip>/?page=recover#
+on remarque que le formulaire contient un champ qui contient un email il suffit de changer le mail pour recuperer le contenut.
+
+pour se proteger mettre le mail du coter server et ne pas se fier un contenut du formulaire.
+
+une autre exploitation  faille clrf conssisterai a mettre un retour a la ligne entre chaque mail example: "victimmail1@gmail.com\hackermail2@gmail.com" 
