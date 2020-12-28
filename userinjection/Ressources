@@ -1,0 +1,19 @@
+sur la page http://<host>/?page=member il y a un champ de recherche.
+en general les champ de recherche font effectuer des action deans ce que l on nomme des base de donnée.
+il est possible de profiter de faille en injectant des requetes sql dans la requete initial ce qu l on nomme injection sql
+
+ici la requete est sous cette forme "SELECT col, col FROM table WHERE id like" + variable
+
+ou ici variable est une string sensé representer un int sauf que l on va pouvoir y rajouter ce que l on veux.
+
+tout d'abord on regarde le nombre de chamo retourner ici on voie que l on en a deux avec la commande:
+1 UNION SELECT NULL, NULL
+
+on va chercher la table qui nous interesse:
+1 UNION SELECT column_name, table_name FROM information_schema.columns;
+ici on voie que il y a une table user c'est elle qui nous interesse.
+
+1 UNION SELECT Commentaire , countersign FROM users
+
+
+tag:5ff9d0165b4f92b14994e5c685cdce28 : FortyTwo

