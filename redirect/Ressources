@@ -1,2 +1,5 @@
 sur la page http://<host>/index.php?page=redirect&site=google.com
 la page redirige vers l url que l on met dans le champ site sans effectuer de vérification on peut donc rediriger vers un site malicieux.
+
+protection
+verifier que le url appele un fichier se trouvant bien dans son arborescence de dossier

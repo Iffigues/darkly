@@ -1,3 +1,6 @@
 on explore les dossier en metant dans le champ page le chemin qui nous interesse.
 la en l occurence on essaye l example touver sur wikipédia ce qui donne http://<host>/?page=../../../../../../../../../etc/passwd
 
+protection
+imposer un chemin absolut, regarder si le fichier voulut se trouve dans un dossier autorisé
+

@@ -2,3 +2,7 @@ dans la section upload image on peut uploadé un fichier en faisant croire que c
 on peut ainsi uploadé un programme malveillant.
 
 cependant a garder dans l'esprit que cela est la partie naive de l exploitation de cette faille, on peut mettre du code malveillant directement dans une image en le rajouteant dans le header ou en mettant le code dans les dernier byte.
+
+protection
+ilexiste de solution qui vont s interfacer entre le client et le server, il vont recevoir en premier l'image faire des analyse antivirus dessus et si c'est bon l envoyer au server.
+Sinon regarder le type, le mime, donner des nom aleatoire a l enregistrement, ...

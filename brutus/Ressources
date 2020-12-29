@@ -1,0 +1,11 @@
+ici on va faire de la force brute pour recuperer un login avec son mdp et se connecter a son compte
+il s'agit d'essayer tout les mdp possible pour trouver le bon
+on peut passer par un dictionnaire de mdp ou essayer tout les mdp avec un generateur de mdp mais cela peut durée des années.
+j ai fai un programme en php qui va essayer tout les mdp dun dictionnaire de mdp sur un login.
+php force.php <host> <pwd.file> <user>
+
+protection
+
+mettre un temps de atence au bout de tant de tentative rater genre 10minutes
+mettres des captcha.
+system de login interfacé avec par example un portable (token de validation)

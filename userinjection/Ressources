@@ -12,8 +12,12 @@ tout d'abord on regarde le nombre de chamo retourner ici on voie que l on en a d
 on va chercher la table qui nous interesse:
 1 UNION SELECT column_name, table_name FROM information_schema.columns;
 ici on voie que il y a une table user c'est elle qui nous interesse.
-
+Il y a 8 champ, on cherche le champ qui nous interesse
 1 UNION SELECT Commentaire , countersign FROM users
+ici, c'est Commentaire qui nous interesse.
 
 
-tag:5ff9d0165b4f92b14994e5c685cdce28 : FortyTwo
+protection
+
+faire du travail sur les chaine de character avant de l inclure dans les requete
+le mieux et de faire des requetes préparées

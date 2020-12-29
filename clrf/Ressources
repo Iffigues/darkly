@@ -5,3 +5,6 @@ on remarque que le formulaire contient un champ qui contient un email il suffit 
 pour se proteger mettre le mail du coter server et ne pas se fier un contenut du formulaire.
 
 une autre exploitation  faille clrf conssisterai a mettre un retour a la ligne entre chaque mail example: "victimmail1@gmail.com\hackermail2@gmail.com" 
+
+protection
+mettre l email en back plutot que sur le front.

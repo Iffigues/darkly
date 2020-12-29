@@ -1,1 +1,6 @@
 dans la console développeur onglet application section cookies on remarque un cookie avec le nom i_am_admin avec une value a "68934a3e9455fa72420237eb05902327" en decryptant on remarque que cela veux dire false, en changent par "true" crypté  "b326b5062b2f0e69046810717534cb09" on devient admin.
+
+protection
+mettre aussi un system de connection sur le back.
+Faire un system de token back/client qui va changer a chaque fois
+

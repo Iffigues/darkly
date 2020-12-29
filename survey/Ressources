@@ -1,2 +1,5 @@
 dans http://<host>/index.php?page=survey il y a un formulaire ou on peut changer les valeur ce qui nous permet de biaisé le formulaire.
 
+protection
+verifier les données avant de les changer
+

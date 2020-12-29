@@ -1,3 +1,8 @@
-on regarde si le fichier robot.txt existe c'est un fichier déstiné au robot tel que le robot de google. il existe bien et on voie que le fichier demande au robot de ne pas se souvenir de /whatever 
-on va sur la page whatever il y a un fichier httpasswd on l enregistre il y a marquer "root:8621ffdbc5698829397d97767ac13db3", on decrypt la partie crypté qui donne dragon 
-on va sur la page /admin et on entre l identifiant root et en mdp dragon et on obtient le flag.
+on regarde si le fichier robot.txt existe c'est un fichier déstiné au robot tel que le robot de google. 
+il existe bien et on voie que le fichier demande au robot de ne pas se souvenir de /whatever 
+on va sur la page whatever il y a un fichier httpasswd on l enregistre il y a marquer "root:8621ffdbc5698829397d97767ac13db3"
+ on decrypt la partie crypté qui donne dragon 
+on va sur la page /admin et on entre l'identifiant root et en mdp dragon et on obtient le flag.
+
+protection
+ne pas faire sa, sinon le proteger avec un .htaccess
