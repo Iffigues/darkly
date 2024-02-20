@@ -1,7 +1,27 @@
 # Git README
 
-School 42 
-Darkly project
+
+
+School 42 Darkly project
+
+
+Les Vm à l'école 42 sont lourdes et prennent souvent toute la place.
+
+
+quelque projet à l'école 42 sont à lancer sur des VMs.
+
+
+Malheuresement, cela use l'espace disque.
+
+
+Les images Dockers sont bien moin gourmandes en mémoire et en pusissance.
+
+
+C'est pourquoi, j'ai eu l'idée de transposer l'iso Darkly en image Docker.
+
+
+Afin de pouvoir lancer la plateforme web Darkly sur une image Docker à faible cout.
+
 
 ## Pour lancer la machine darkly sur un docker: 
 
@@ -20,4 +40,3 @@ docker run -d -p <your-port-number>:80 -it -t iffigues/darkly42web
 exemple:
 docker run -d -p 80:80 -it -t iffigues/darkly42web
 ```
-
