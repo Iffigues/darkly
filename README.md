@@ -12,10 +12,10 @@ Les Vm à l'école 42 sont lourdes et prennent souvent toute la place.
 quelque projet à l'école 42 sont à lancer sur des VMs.
 
 
-Malheuresement, cela use l'espace disque.
+Malheureusement, cela use l'espace disque.
 
 
-Les images Dockers sont bien moin gourmandes en mémoire et en pusissance.
+Les images Dockers sont bien moin gourmandes en mémoire et en puisssance.
 
 
 C'est pourquoi, j'ai eu l'idée de transposer l'iso Darkly en image Docker.
@@ -37,7 +37,7 @@ parce que c'est mieux que sur une lourde VM
 
 ```
 docker pull iffigues/darkly42web
-  docker run -d -p <your-port-number>:80 -it -t iffigues/darkly42web
+docker run -d -p <your-port-number>:80 -it -t iffigues/darkly42web
 
 exemple:
   docker run -d -p 80:80 -it -t iffigues/darkly42web
