@@ -43,3 +43,6 @@ start:
 exemple:
   docker run -d -p 80:80 -it -t iffigues/darkly42web
 ```
+Darkly est un projet de sécurité web, de l'école 42, ou l'on doit trouver les différente faille sur un site web nommé darkly.
+
+Darkly est le premier projet sécurité dans la branche sécurité de l'école 42.
